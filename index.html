@@ -18,16 +18,14 @@
   IN MAIN PART - REMOVE SWANSEA & SEVILLA, CHANGE JAVASCRIPT TO FRONTEND WEB DEVELOPER? - ADD SOCIAL LINKS?
   MAKE THE PROJECTS LINKS GO TO LIVE SITE - ADD TO NETLIFY
   GET RID OF ABOUT SECTION??
-  MAKE CERTIFICATES LINK A DROPDOWN - FOR THE OTHER COURSES, NEED 3
   ADD SPANISH (& WELSH?) BUTTON(S) TO CHANGE PAGE TO SPANISH (& WELSH?)
   FIX NAV MENU ON MOBILE VIEW AND MOVILE VIEW IN GENERAL - DO THE FLOAT OUT MENU ONE THAT I DID ON NEWS APP 
   OR SIMILAR
   CHANGE CONTACTS TO A FORM AND PUT THE OTHER LINKS BELOW OR IN FOOTER
-  ADD SOME ANIMATIONS TO THE SECTIONS AS SCROLL THROUGH THE PAGE
+  ADD SOME ANIMATIONS TO THE SECTIONS AS SCROLL THROUGH THE PAGE - AND TO THE NAV MENU AND DROPDOWN CERTS LINK
   IN PROJECTS, ADD LINK TO GITHUB, AND A LINK FOR EACH PROJECT TO LIVE SITE AND GITHUB CODE 
   - CHANGE THE PICTURES TOO? - REMOVE GUESS THE FOOTBALL TEAM
-  **IN CV CHANGE PORTFOLIO LINKS TO THIS, BOTH GITHUB AND LIVE SITE**
-   -->
+  -->
 
   <nav class="site-nav grid">
     <h1>Liam Alexander</h1>
@@ -37,7 +35,15 @@
       <li><a href="#skills" class="nav-link">Skills</a></li>
       <li><a href="#contact" class="nav-link">Contact</a></li>
       <li><a href="/images/Liam CV Frontend Dev 2023.pdf" target="_blank" class="nav-link">Curriculum</a></li>
-      <li><a href="/images/Javascript Course Certificate.jpg" target="_blank" class="nav-link">Certificates</a></li>
+      <!-- <li><a href="/images/Javascript Course Certificate.jpg" target="_blank" class="nav-link">Certificates</a></li> -->
+      <div class="dropdown">
+        <button class="nav-link dropdown-btn">Certificates</button>
+        <div class="dropdown-content">
+          <li><a href="/images/Javascript Course Certificate.jpg" target="_blank" class="nav-link drop-link">Javascript Course</a></li>
+          <li><a href="#" target="_blank" class="nav-link drop-link">CSS Course</a></li>
+          <li><a href="#" target="_blank" class="nav-link drop-link">React Course</a></li>
+        </div>
+      </div>
     </ul>
     <i class="fa-solid fa-bars"></i>
   </nav>
