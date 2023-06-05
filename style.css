@@ -429,7 +429,9 @@ h3 {
   #contact-form {
     width: 50%;
     margin: auto;
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
   }
 
   #name, #email {
@@ -438,6 +440,7 @@ h3 {
     border-radius: 5px;
     padding: 1em;
     border: none;
+    /* margin: .5em 0 1em; */
   }
 
   #message {
@@ -445,12 +448,32 @@ h3 {
     border-radius: 5px;
     padding: 1em;
     border: none;
+    /* margin: .5em 0 1em; */
   }
 
   #submit {
     border-radius: 10px;
     width: 10em;
     height: 2.5em;
+    border: none;
+    margin: .5em 0;
+    align-self: center;
+    color: #fff;
+    font-size: 1em;
+  }
+
+  #submit:hover {
+    transform: scale(1.1);
+    transform: translateY(-2px);
+    background: #fff;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+  }
+
+  .labels {
+    margin-left: 0.5em;
+    margin-bottom: -.5em;
+    margin-top: .5em;
   }
 }
 
