@@ -18,6 +18,7 @@
   IN MAIN PART - REMOVE SWANSEA & SEVILLA, CHANGE JAVASCRIPT TO FRONTEND WEB DEVELOPER? - ADD SOCIAL LINKS?
   MAKE THE PROJECTS LINKS GO TO LIVE SITE - ADD TO NETLIFY
   GET RID OF ABOUT SECTION??
+  FIX MARGIN BETWEEN CERTIFICATES LINK AND OTHER LINKS
   ADD SPANISH (& WELSH?) BUTTON(S) TO CHANGE PAGE TO SPANISH (& WELSH?)
   FIX NAV MENU ON MOBILE VIEW AND MOVILE VIEW IN GENERAL - DO THE FLOAT OUT MENU ONE THAT I DID ON NEWS APP 
   OR SIMILAR
@@ -25,6 +26,10 @@
   ADD SOME ANIMATIONS TO THE SECTIONS AS SCROLL THROUGH THE PAGE - AND TO THE NAV MENU AND DROPDOWN CERTS LINK
   IN PROJECTS, ADD LINK TO GITHUB, AND A LINK FOR EACH PROJECT TO LIVE SITE AND GITHUB CODE 
   - CHANGE THE PICTURES TOO? - REMOVE GUESS THE FOOTBALL TEAM
+
+  ADD MARGIN TO THE FORM ELEMENTS AND BOX-SHADOW AND LINKS IN CONTACT
+  HEADER - MOBILE VIEW - LIKE IN FRONTEND PROJECT
+  MY PROJECTS - CHANGE PICS AND LINKS TO LIVE & GITHUB
   -->
 
   <nav class="site-nav grid">
@@ -40,7 +45,7 @@
         <button class="nav-link dropdown-btn">Certificates</button>
         <div class="dropdown-content">
           <li><a href="/images/Javascript Course Certificate.jpg" target="_blank" class="nav-link drop-link">Javascript Course</a></li>
-          <li><a href="#" target="_blank" class="nav-link drop-link">CSS Course</a></li>
+          <li><a href="/images/CSS and Sass Certificate.pdf" target="_blank" class="nav-link drop-link">CSS & Sass Course</a></li>
           <li><a href="#" target="_blank" class="nav-link drop-link">React Course</a></li>
         </div>
       </div>
@@ -155,7 +160,19 @@
   
   <section id="contact">
     <h3>Get in Touch</h3>
-    <ul class="socials">
+
+    <form id="contact-form" name="contact-form" method="post">
+      <label for="name">Your name</label><br>
+      <input type="text" name="name" id="name" placeholder="Your name..."><br>
+      <label for="email">Email</label><br>
+      <input type="email" name="email" id="email" placeholder="Your email..."><br>
+
+      <label for="message">Message</label><br>
+      <textarea name="message" id="message" placeholder="Write something..." cols="30" rows="10"></textarea><br>
+      <input type="submit" value="Submit" id="submit">
+    </form>
+
+    <!-- <ul class="socials">
       <li><i class="fa-solid fa-phone"></i>
         <a href="tel:(+34)617718650"><p>ES: (+34) 617 718 650</p></a><br>
         <a href="tel:(+44)7598801750"><p>UK: (+44) 759 880 1750</p></a><br>
@@ -165,7 +182,7 @@
         <a href="https://linkedin.com/in/liam-alexander-771a09234" target="blank"><p>Liam Alexander</p></a></li>
       <li><a href="https://github.com/liamalexander" target="blank"><i class="fa-brands fa-github"></i></a>
         <a href="https://github.com/liamalexander" target="blank"><p>github.com/liamalexander</p></a></li>
-    </ul>
+    </ul> -->
   </section>
 
   <footer>
@@ -175,5 +192,6 @@
   </footer>
   
   <script src="/script.js"></script>
+  <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=ljgb1nos&n=n1.ratufa.io"></script>
 </body>
 </html>
