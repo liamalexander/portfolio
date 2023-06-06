@@ -215,6 +215,7 @@ h3 {
   background: rgba(0,0,0,0.2);
   padding: 2em;
   border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(100,100,100,0.2);
 }
 
 #name, #email {
@@ -269,6 +270,7 @@ h3 {
   padding: 2em 0;
   background: rgba(0,0,0,0.2);
   border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(100,100,100,0.2);
 }
 
 .fa-phone, .fa-envelope, .fa-linkedin, .fa-github {
@@ -359,7 +361,7 @@ h3 {
 
   .projects {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   #portfolio a {
