@@ -55,7 +55,8 @@ p, a, ul, li {
   display: inline-block;
 }
 
-.links li a:hover {
+.links li a:hover,
+.dropdown-btn:hover {
   transform: scale(1.1);
 }
 
@@ -198,12 +199,22 @@ h3 {
   margin-top: 150px;
 }
 
+.contact-wrapper {
+  width: 80%;
+  margin: auto;
+  /* text-align: center; */
+  display: flex;
+}
+
 #contact-form {
   width: 50%;
   margin: auto;
   /* text-align: center; */
   display: flex;
   flex-direction: column;
+  background: rgba(0,0,0,0.2);
+  padding: 2em;
+  border-radius: 20px;
 }
 
 #name, #email {
@@ -249,14 +260,20 @@ h3 {
 }
 
 .socials {
-	width: 100%;
+	/* width: 100%; */
+  width: 35%;
 	text-align: center;
-	margin: auto;
+	margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0;
+  background: rgba(0,0,0,0.2);
+  border-radius: 20px;
 }
 
 .fa-phone, .fa-envelope, .fa-linkedin, .fa-github {
 	font-size: 2em;
-	margin: 30px 0;
+	margin: 20px 0 15px;
 	cursor: pointer;
 	color: var(--primary);
 }
@@ -276,9 +293,9 @@ h3 {
 	transform: none;
 }
 
-.socials li {
+/* .socials li {
 	margin: 20px;
-}
+} */
 
 .socials p {
 	cursor: pointer;
@@ -322,13 +339,13 @@ h3 {
     margin: 25px 0;
   }
 
-  .socials {
+  /* .socials {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		width: 100%;
 		text-align: center;
 		margin: auto;
-	}
+	} */
 }
 
 @media screen and (min-width: 820px) {
@@ -466,11 +483,11 @@ h3 {
 		padding-top: 20px;
 	}
 
-  .socials {
+  /* .socials {
 		width: 80%;
     margin-bottom: 40px;
     font-size: 1.1em;
-	}
+	} */
 
 	.fa-phone, .fa-envelope, .fa-linkedin, .fa-github {
 		font-size: 2em;

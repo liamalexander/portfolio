@@ -18,7 +18,7 @@
   IN MAIN PART - REMOVE SWANSEA & SEVILLA, CHANGE JAVASCRIPT TO FRONTEND WEB DEVELOPER? - ADD SOCIAL LINKS?
   MAKE THE PROJECTS LINKS GO TO LIVE SITE - ADD TO NETLIFY
   GET RID OF ABOUT SECTION??
-  FIX MARGIN BETWEEN CERTIFICATES LINK AND OTHER LINKS
+  FIX MARGIN IN CERTIFICATES AND OTHER LINKS INSIDE IT
   ADD SPANISH (& WELSH?) BUTTON(S) TO CHANGE PAGE TO SPANISH (& WELSH?)
   FIX NAV MENU ON MOBILE VIEW AND MOVILE VIEW IN GENERAL - DO THE FLOAT OUT MENU ONE THAT I DID ON NEWS APP 
   OR SIMILAR
@@ -27,8 +27,8 @@
   IN PROJECTS, ADD LINK TO GITHUB, AND A LINK FOR EACH PROJECT TO LIVE SITE AND GITHUB CODE 
   - CHANGE THE PICTURES TOO? - REMOVE GUESS THE FOOTBALL TEAM
 
-  ADD MARGIN TO THE FORM ELEMENTS AND BOX-SHADOW, ADD HOVER EFFECT ON SUBMIT BTN AND LINKS IN CONTACT - IN
-  CONTACTS, CHANGE ES AND UK TO FLAGS?
+  ADD MARGIN TO THE FORM ELEMENTS AND BOX-SHADOW, ADD LINKS IN CONTACT - IN
+  CONTACTS, CHANGE ES AND UK TO FLAGS? - MAKE WIDER ON MOBILE VIEW
   HEADER - MOBILE VIEW - LIKE IN FRONTEND PROJECT
   MY PROJECTS - CHANGE PICS AND LINKS TO LIVE & GITHUB
   -->
@@ -162,16 +162,30 @@
   <section id="contact">
     <h3>Get in Touch</h3>
 
-    <form id="contact-form" name="contact-form" method="post">
-      <label for="name" class="labels">Name</label><br>
-      <input type="text" name="name" id="name" placeholder="Your name..."><br>
-      <label for="email" class="labels">Email</label><br>
-      <input type="email" name="email" id="email" placeholder="Your email..."><br>
+    <div class="contact-wrapper">
+      <ul class="socials">
+        <li><i class="fa-solid fa-phone"></i>
+          <a href="tel:(+34)617718650"><p>ES: (+34) 617 718 650</p></a><br>
+          <a href="tel:(+44)7598801750"><p>UK: (+44) 759 880 1750</p></a><br>
+        <li><a href="mailto:liamalexander7@hotmail.co.uk"><i class="fa-solid fa-envelope"></i></a>
+          <p><a href="mailto:liamalexander7@hotmail.co.uk">liamalexander7@hotmail.co.uk</a></p></li>
+        <li><a href="https://linkedin.com/in/liam-alexander-771a09234" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://linkedin.com/in/liam-alexander-771a09234" target="blank"><p>Liam Alexander</p></a></li>
+        <li><a href="https://github.com/liamalexander" target="blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://github.com/liamalexander" target="blank"><p>github.com/liamalexander</p></a></li>
+      </ul>
 
-      <label for="message" class="labels">Message</label><br>
-      <textarea name="message" id="message" placeholder="Write something..." cols="30" rows="10"></textarea><br>
-      <input type="submit" value="Submit" id="submit" class="button">
-    </form>
+      <form id="contact-form" name="contact-form" method="post">
+        <label for="name" class="labels">Name</label><br>
+        <input type="text" name="name" id="name" placeholder="Your name..."><br>
+        <label for="email" class="labels">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="Your email..."><br>
+
+        <label for="message" class="labels">Message</label><br>
+        <textarea name="message" id="message" placeholder="Write something..." cols="30" rows="10"></textarea><br>
+        <input type="submit" value="Submit" id="submit" class="button">
+      </form>
+    </div>
 
     <!-- <ul class="socials">
       <li><i class="fa-solid fa-phone"></i>
