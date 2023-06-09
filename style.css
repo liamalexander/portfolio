@@ -84,6 +84,9 @@ p, a, ul, li {
 
 .welcome-text {
   padding: 50px;
+  background: rgba(0, 0, 0, 0.2);
+  clip-path: polygon(50% 0%, 100% 12%, 95% 80%, 75% 100%, 25% 100%, 6% 79%, 0 13%);
+  box-shadow: rgba(100, 100, 100, 0.2) 5px 5px 10px;
 }
 
 .welcome-text h2 {
@@ -170,6 +173,10 @@ h3 {
 .info {
   font-size: 1.2em;
   line-height: 1.7em;
+  background: rgba(0,0,0,0.2);
+  padding: 1.5em;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 100, 0.2) 5px 5px 10px;;
 }
 
 .projects {
