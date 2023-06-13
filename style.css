@@ -30,7 +30,7 @@ p, a, ul, li {
 .site-nav {
   display: flex;
   align-items: center;
-  background: rgba(65, 65, 65, 0.5);
+  background: rgba(0,0,0,0.2);
 }
 
 .site-nav h1 {
@@ -425,6 +425,7 @@ h3 {
 
   .dropdown {
     text-align: center;
+    margin: 0 15px;
   }
 
   .dropdown-btn {
@@ -447,6 +448,7 @@ h3 {
     display: none;
     position: absolute;
     z-index: 1;
+    background: rgba(0,0,0,0.2);
   }
 
   .dropdown-content a {
@@ -457,6 +459,7 @@ h3 {
     /* display: block; */
     /* text-align: left; */
     /* margin: 1em 0; */
+    padding-bottom: 1em;
   }
 
   .dropdown:hover .dropdown-content {
@@ -464,7 +467,7 @@ h3 {
     text-align: left;
     margin-left: -1.5em;
     padding-top: 0.5em;
-    background: rgba(65, 65, 65, 0.5);;
+    background: rgba(0,0,0,0.2);
   }
 
   /* .dropdown-btn:hover {
